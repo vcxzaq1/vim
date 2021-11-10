@@ -21,7 +21,13 @@ Plug 'preservim/nerdcommenter'
 Plug 'rhysd/git-messenger.vim'
 Plug 'metakirby5/codi.vim'
 Plug 'mhinz/vim-startify'
-
+Plug 'tpope/vim-fugitive'
+Plug 'elixir-editors/vim-elixir'
+Plug 'voldikss/vim-floaterm'
+Plug 'airblade/vim-gitgutter'
+Plug 'mattn/emmet-vim'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 
 " Colors and stuff
 Plug 'npxbr/gruvbox.nvim'
@@ -56,7 +62,8 @@ syntax on
 colorscheme tokyonight
 
 " Find files using Telescope command-line sugar.
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>ff <cmd>:Explore<cr>
+nnoremap <leader>fh <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
